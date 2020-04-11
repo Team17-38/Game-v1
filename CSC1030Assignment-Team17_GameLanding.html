@@ -1,0 +1,134 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Modern Reboot of the Classic Text Adventure</title>
+    <link href="CSC1030Assignment-Team17_CSS.css" type="text/css" rel="stylesheet">
+    <script src="CSC1030Assignment-Team17_GameLandingJavaScript.js"></script>
+    <style type="text/css">
+      #MainFunction{
+        font-size: 150%;
+      }
+
+      .LargerText{
+        font-size: 100%;
+      }
+
+      fieldset{
+        border: 3px rgb(48, 10, 10) solid;
+        margin: auto;
+      }
+
+      #AccessibilityFeaturesCheck{
+        background-color: white;
+        color: black;
+        font-family: sans-serif;
+
+        width: 80%;
+        margin: auto;
+      }
+
+      .columb{
+        height: 50%;
+        width:50%;
+        float: left;
+      }
+
+      #bottomRow{
+        height: 50%;
+        width: 100%;
+        clear: left;
+      }
+
+      @media screen and (max-width: 1000px){
+        #MainFunction{
+          font-size: 130%;
+        }
+
+        .LargerText{
+          font-size: 80%;
+        }
+
+        .columb{
+          height: 35%;
+          width:100%;
+        }
+
+        #bottomRow{
+          height: 30%;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Wrapper">
+      <div id="Header">
+        <h1>ENTER GAME NAME HERE</h1>
+      </div>
+      <div id="Links">
+        <a href="CSC1030Assignment-Team17_Home.html" id="Link">Home</a>
+        <a href="CSC1030Assignment-Team17_GameLanding.html" id="Link">Game</a>
+      </div>
+      <div id="MainFunction">
+        <form>
+          <fieldset class="columb">
+            <legend>Personal details</legend>
+            <label>Name: <input type="text" name="Name" size="15" maxlength="30"/ class="LargerText"></label>
+            <p></p>
+            <label>Gender: <input type="radio" name="Gender" value="Male" /> Male
+                           <input type="radio" name="Gender" value="Female" /> Female
+                           <input type="radio" name="Gender" value="Other" /> Other
+                           <input type="radio" name="Gender" value="Perfer not to say" /> Perfer not to say
+            </label>
+            <p></p>
+            <label>Date of birth: <input type="date" name="DOB" / class="LargerText"></label>
+          </fieldset>
+          <fieldset class="columb">
+            <legend>Accessibility features</legend>
+            <label>Background colour: <select name="Background colour" class="LargerText">
+              <option value="Option 1">Option 1</option>
+              <option value="Option 2">Option 2</option>
+              <option value="Option 3">Option 3</option>
+              <option value="Option 4">Option 4</option>
+            </select></label>
+            <p></p>
+            <label>Font colour: <select name="Font colour" class="LargerText">
+              <option value="Option 1">Option 1</option>
+              <option value="Option 2">Option 2</option>
+              <option value="Option 3">Option 3</option>
+              <option value="Option 4">Option 4</option>
+            </select></label>
+            <p></p>
+            <label>Font type: <select name="Font type" class="LargerText">
+              <option value="Option 1">Option 1</option>
+              <option value="Option 2">Option 2</option>
+              <option value="Option 3">Option 3</option>
+              <option value="Option 4">Option 4</option>
+            </select></label>
+            <div id="AccessibilityFeaturesCheck">
+              <p>This is what the text will look like</p>
+            </div>
+          </fieldset>
+          <fieldset id="bottomRow">
+            <legend>Game features</legend>
+            <label>Avatar: <input type="image" src="Images/Avatar1.jpg" width="50" height="50" />
+                           <input type="image" src="Images/Avatar2.jpg" width="50" height="50" />
+                           <input type="image" src="Images/Avatar3.jpg" width="50" height="50" />
+                           <input type="image" src="Images/Avatar4.jpg" width="50" height="50" />
+            </label>
+            <p></p>
+            <input type="submit" value="Normal mode" onclick="startGame('Normal');"/ class="LargerText">
+            <input type="submit" value="Difficult mode" onclick="startGame('Difficult');"/ class="LargerText">
+          </fieldset>
+        </form>
+      </div>
+      <div id="Footer">
+        <p>
+          This website has been created by team 17
+          <button onclick="window.location.href = 'CSC1030Assignment-Team17_GamePlay.html'">Go to game play - tempory</button>
+          <button onclick="window.location.href = 'CSC1030Assignment-Team17_GameSummary.html'">Go to game summary - tempory</button>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

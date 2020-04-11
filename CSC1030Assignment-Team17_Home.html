@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <title>Modern Reboot of the Classic Text Adventure</title>
+    <link href="CSC1030Assignment-Team17_CSS.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+    #MainFunction *{
+      text-align: left;
+      font-size: 110%;
+    }
+
+    #topRow{
+      border: 3px rgb(48, 10, 10) solid;
+      height: 40%;
+      width: 100%;
+    }
+
+    #leftColumb{
+      border: 3px rgb(48, 10, 10) solid;
+      height: 60%;
+      width: 60%;
+      float: left;
+    }
+
+    #rightColumb{
+      border: 3px rgb(48, 10, 10) solid;
+      height: 60%;
+      width: 40%;
+      float: left;
+    }
+
+    @media screen and (max-width: 1040px){
+      #MainFunction *{
+        font-size: 105%;
+      }
+
+      #topRow{
+        height: 30%;
+        width: 100%;
+      }
+
+      #leftColumb{
+        height: 40%;
+        width: 100%;
+      }
+
+      #rightColumb{
+        height: 30%;
+        width: 100%;
+      }
+    }
+
+    #table{
+      font-size: 100%;
+    }
+
+    table, tr, td{
+      margin: auto;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="Wrapper">
+      <div id="Header">
+        <h1>ENTER GAME NAME HERE</h1>
+      </div>
+      <div id="Links">
+        <a href="CSC1030Assignment-Team17_Home.html" id="Link">Home</a>
+        <a href="CSC1030Assignment-Team17_GameLanding.html" id="Link">Game</a>
+      </div>
+      <div id="MainFunction">
+        <div id="topRow">
+          <p>You wake up in a darkened room, you can see ancient symbols drawn on the walls, and you find a torch with limited batteries left.
+            <i> Will you be able to avoid the traps and find a way to escape? </i>
+            Quick, escape while you still have light or else you’ll be <b>lost forever...</b></p>
+          <p><br>You can choose from a variety of avatars.</p>
+        </div>
+        <div id="leftColumb">
+          <p>There are different game modes for you to try, these include:</p>
+          <ol>
+            <li>Normal - In normal mode, you have 5 minutes and 3 lifes</li>
+            <li>Hard - In hard mode, you have 3 minutes and 1 life</li>
+          </dl>
+          <p><br>Your character has 6 invertory spaces to hold items that you can collect. Items include:</p>
+          <ul>
+            <li>Keys</li>
+            <li>Objects to increase your stats</li>
+          </ul>
+        </div>
+        <div id="rightColumb">
+          <table id="table">
+            <tr>
+              <td>Game attribute</td>
+              <td>Starting value</td>
+            </tr>
+            <tr>
+              <tr>
+                <td>Intelligence</td>
+                <td>5</td>
+              </tr>
+              <td>Might</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Lives</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Gold</td>
+              <td>0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="Footer">
+        <p>This website has been created by team 17</p>
+      </div>
+    </div>
+  </body>
+</html>

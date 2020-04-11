@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgb(41, 39, 39);
+}
+
+#Wrapper {
+  border: 3px rgb(48, 10, 10) solid;
+  background-color: rgb(128, 76, 56);
+  height: 90%;
+  min-height: 560px;
+  max-height: 1000px;
+  width: 90%;
+  min-width: 580px;
+  max-width: 2000px;
+  margin: 2% 5%;
+  overflow: hidden;
+}
+
+#Header {
+  border: 5px rgb(48, 10, 10) solid;
+  height: 10%;
+}
+
+#Links{
+  border: 3px rgb(48, 10, 10) solid;
+  height: 5%;
+}
+
+#Link{
+  color: blue;
+}
+
+#Link:hover{
+  color: red;
+}
+
+#MainFunction {
+  border: 3px rgb(48, 10, 10) solid;
+  height: 80%;
+}
+
+#Footer {
+  border: 3px rgb(48, 10, 10) solid;
+  height: 5%;
+}
